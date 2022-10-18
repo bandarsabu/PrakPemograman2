@@ -1,5 +1,4 @@
 package PRAK202_2110817110012_AkhiratulAkmalAgustiannoor;
-import java.text.DecimalFormat;
 
   class Mobil {
     String merek;
