@@ -19,6 +19,14 @@ public class Dadu {
         }
     }
     
+        void acakNilai2() {
+        for( int i = 1; i <= this.inputUser; i++ ) {
+            int nilaiAcak = 1 + (int)(Math.random() * 6);
+            ObjDadu.add(nilaiAcak);
+            this.total = this.total + nilaiAcak;
+        }
+    }
+    
     void cetakDadu() {
         for( int i = 1; i <= this.inputUser; i++ ) {
             System.out.println("Dadu ke-" + i + " bernilai " + ObjDadu.get(i-1));
