@@ -4,17 +4,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner inp = new Scanner(System.in);
-        String a, b;
-        int c;
-        inp.next();
-        a = inp.nextLine();
-        inp.next();
-        b = inp.nextLine();
-        inp.next();
-        inp.next();
-        c = inp.nextInt();
-        Buku book = new Buku(a, b, c);
-        book.display();
+        String judul = "", penulis = "";
+        int tahun = 0;
+        
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Judul: ");
+        judul = input.nextLine();
+        
+        System.out.print("Penulis: ");
+        penulis = input.nextLine();
+        
+        System.out.print("Tahun Terbit: ");
+        tahun = input.nextInt();
+        
+        Buku buku = new Buku(judul, penulis, tahun);
+        
+        buku.display();
     }
 }
